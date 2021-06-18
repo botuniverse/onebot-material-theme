@@ -1,0 +1,52 @@
+{#-
+This file was automatically generated - do not edit
+-#}
+{% extends "overrides/main.html" %}
+{% block tabs %}
+{{ super() }}
+<style>.md-header {
+    position: initial
+}
+
+.md-main__inner {
+    margin: 0
+}
+
+.md-content {
+    display: none
+}
+
+@media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
+        display: none
+    }
+}
+
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+        display: none
+    }
+}</style>
+<section class="mdx-container">
+    <div class="md-grid md-typeset">
+        <div class="mdx-hero">
+            <div class="mdx-hero__image">
+                <img src="assets/logo.png" alt="" width="350" height="350" draggable="false"
+                     style="filter: invert(100%)">
+            </div>
+            <div class="mdx-hero__content">
+                <h1>OneBot 是一个聊天机器人应用接口标准</h1>
+                <p>旨在统一不同聊天平台上的机器人应用开发接口，使开发者只需编写一次代码即可应用到多种机器人平台。</p>
+                <a href="production" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+                    开始浏览
+                </a>
+                <!--a href="{{ 'insiders/' | url }}" title="Material for MkDocs Insiders" class="md-button">
+            Get Insiders
+          </a-->
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
